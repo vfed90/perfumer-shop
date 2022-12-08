@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script
+      src="https://kit.fontawesome.com/d3d04ffbcf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfumer</title>
+  </head>
+
+  <body>
+    <header>
+        <nav>
+            <ul class="container nav">
+              <li>
+                <a href="#" class="logo">Perfumer</a>
+              </li>
+              <li>
+                <a href="#shop-items">Catalog</a>
+              </li>
+              <li>
+                <a href="#contacts">Contacts</a>
+              </li>
+              <li>
+                <div class="site-search">
+                  <input type="search" id="search-input">
+                  <button type="button" id="search-btn" class="fa fa-search"></i>
+                </div>
+              </li>
+            </ul>
+          </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="filters-sort">
+          <label for="sort">Sort</label>
+          <select name="sort" id="sort">
+            <option selected value="alphabet">Alphabetically</option>
+            <option value="expensive">Price High To Low</option>
+            <option value="cheap">Price Low To High</option>
+            <option value="rating">Top Rated</option>
+          </select>
+        </div>
+      </div>
+      <div class="container">
+        <section id="shop-items"></section>
+        <p id="nothing-found">Nothing Found</p>
+      </div>
+    </main>
+    <footer>
+      <a href="#" class="logo">Perfumer</a>
+      <ul id="contacts">
+        <li>
+          <a href="tel:+1(800)469-92-69">+1(800)469-92-69</a>
+        </li>
+        <li>
+          <a href="#">1505 MORRIS AVE BRONX NY 10457-8702 USA</a>
+        </li>
+      </ul>
+      <div class="social-links">
+        <a href="https://www.instagram.com" class="social-links__item"
+          >
+        <img src="./icon-instagram.png" alt="instagram" class="icon">
+        </a>
+      </div>
+    </footer>
+    <template>
+      <div class="shop-item">
+        <img src="" />
+        <div class="content">
+          <div class="tags"></div>
+          <h1></h1>
+          <p></p>
+          <p class="volume"></p>
+        </div>
+        <div class="bottom-info">
+          <span class="price"></span>
+          <div class="rating"></div>
+        </div>
+      </div>
+    </template>
+    <script src="script.js"></script>
+  </body>
+</html>
